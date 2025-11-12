@@ -2,11 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* The brand variables */
+
+/*0000f3 is MCAST blue */
+
 :root {
     --primary:#7b4c2f;
+    --primary-tint:#a9795b;
+    --primary-shade: #3e2b20;
+
     --light: #fffdf8;
     --dark: #2e2823;
-    --muted: #f8f6f5;
+
+    --muted: #e8e6e5;
+    --muted-tint: #f8f6f5;
+    --muted-shade: #d8d6d5;
 
     --font-base: Roboto, Verdana, sans-serif;
     --font-heading: 'Noto Serif', serif;
@@ -19,10 +28,14 @@
     --space-1: 0.5rem;
     --space-2: 1rem;
     --space-3: 2rem;
+
+    --border-light:4px solid var(--light);
+    --border-radius: 0.5rem;
 }
 
 /* CSS Reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -43,17 +56,46 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     padding: var(--space-1) var(--space-2);
     border: none;
-    border-radius: 1rem;
+    border-radius: var(--space-2);
     cursor: pointer;
 }
 
 .btn-primary {
     background-color: var(--primary);
-    color: #ffffff;
+    color: var(--light);
 } 
 
+.btn-primary:hover { /* mouse over button */
+    background-color: var(--primary-tint);
+}
+
+.btn-primary:active { /* while nutton is being clicked */
+    background-color: var(--primary-shade);
+}
 .btn-secondary {
     background-color: var(--muted);
+    color: var(--dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--muted-tint);
+}
+
+.btn-secondary:active {
+    background-color: var(--muted-shade);
+}
+
+.link {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--primary-tint);
+}
+
+.link:active {
+    color: var(--primary-shade);
 }
 
 /**************************** COLOURS ******************************/
@@ -68,9 +110,56 @@ h1, h2, h3, h4, h5, h6 {
 .text-muted { color: var(--muted);}
 
 .shadow-dark { box-shadow: 0 0.1rem 0.2rem 0.1rem rgba( 46, 40, 35, 0.2);}
+.shadow-light { box-shadow: 0 0.1rem 0.2rem 0.1rem rgb(255, 255, 255, 0.5);}
+
+/**************************** COMPONENTS ******************************/
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border: var(--border-light);
+    border-radius: var(--border-radius);
+}
+
+.product-image .image-tag {
+    background-color: var(--dark);
+    color: var(--light);
+
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--space-3);
+
+    position: absolute;
+    left: var(--space-2);
+    top: var(--space-2);
+}
+
+.tags {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+}
+
+.tags .tag-item {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--space-3);
+    text-decoration: none;
+}
 
 /**************************** LAYOUT ******************************/
 
+.container {
+    max-width: 1280px;
+    margin: var(--space-2) auto;
+}
 .d-flex {display: flex;}
 .flex-between {justify-content: space-between;}
 
@@ -82,6 +171,8 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* fr -fraction */
 }
+
+.border-rounded {border-radius: var(--border-radius);}
 
 /**************************** SPACING ******************************/
 
@@ -112,4 +203,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .swatch .swatch-name{
     text-align: center;
+}
+
+/**************************** TEXT ******************************/
+
+.line-1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+
+    height: 1.5rem;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+.line-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    height: 3rem;
+    overflow: clip;
+    text-overflow: ellipsis;
 }

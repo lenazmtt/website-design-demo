@@ -9,12 +9,12 @@
     <title>Coffee Shop Style Guide</title>
 </head>
 <body>
-    <main class="style-guide">
+    <main class="style-guide container">
         <h1>Coffee Shop Style Guide</h1>
         <p>Design tokens and reusable styles for the website.</p>
 
         <!-- Colour Swatches / Palette -->
-        <section>
+        <section class="p-2 shadow-dark m-2 border-rounded">
             <h2>Colour Palette</h2>
 
             <article class="swatches d-flex gap-2">
@@ -44,17 +44,20 @@
         </section>
 
         <!-- Typography -->
-        <section>
+        <section class="p-2 shadow-dark m-2 border-rounded">
             <h2>Typography</h2>
 
             <h1>Heading XL - Coffee Shop</h1>
             <h2>Heading L6 - Freshly Brewed</h2>
             <p>Body Text - Used for general descriptions</p>
             <p class=" bg-primary text-muted">Muted text - used for subtle details</p>
+
+            <p class="line-1">Cutoff Line 1 - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam quidem itaque rem dignissimos nulla hic suscipit, corporis sapiente aliquam cumque perspiciatis repellat voluptate id veritatis neque sint voluptates quod, soluta magni velit ipsam adipisci nostrum. Maiores praesentium fuga eos suscipit ex sapiente voluptas! Deserunt ab adipisci praesentium pariatur facilis, ut harum mollitia perferendis hic quod non aspernatur sint, repellat eum. Et cumque, similique minus illo excepturi facilis tempore ipsum ex temporibus accusantium culpa quos voluptas sunt at! Iure, iusto harum? Repellat necessitatibus est ipsum eaque culpa earum animi sunt ipsa cupiditate, repudiandae, corporis quisquam repellendus, iure consectetur provident. Sapiente aliquam animi omnis quia eos nihil dolore fuga! Magnam veniam obcaecati, provident ea delectus accusamus reiciendis deleniti, odio voluptate cumque modi accusantium neque ipsam iusto itaque consectetur cupiditate? Doloribus enim pariatur perferendis facere cumque sunt minima, eius deleniti iure quas recusandae quam, eaque vel voluptatum delectus nesciunt, amet sapiente. Fugiat labore accusamus iste, ad sapiente, dolorum assumenda voluptatem, dicta vero esse at animi. Nam veritatis excepturi sapiente expedita ex explicabo similique rerum consequatur rem illum, est unde architecto. Totam voluptatem a repudiandae fugiat blanditiis in error nisi quisquam, voluptatum impedit. Expedita vero delectus nulla voluptates tempora rerum quas, quis cupiditate?</p>
+            <p class="line-2">Cutoff Line 2 - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aperiam quidem itaque rem dignissimos nulla hic suscipit, corporis sapiente aliquam cumque perspiciatis repellat voluptate id veritatis neque sint voluptates quod, soluta magni velit ipsam adipisci nostrum. Maiores praesentium fuga eos suscipit ex sapiente voluptas! Deserunt ab adipisci praesentium pariatur facilis, ut harum mollitia perferendis hic quod non aspernatur sint, repellat eum. Et cumque, similique minus illo excepturi facilis tempore ipsum ex temporibus accusantium culpa quos voluptas sunt at! Iure, iusto harum? Repellat necessitatibus est ipsum eaque culpa earum animi sunt ipsa cupiditate, repudiandae, corporis quisquam repellendus, iure consectetur provident. Sapiente aliquam animi omnis quia eos nihil dolore fuga! Magnam veniam obcaecati, provident ea delectus accusamus reiciendis deleniti, odio voluptate cumque modi accusantium neque ipsam iusto itaque consectetur cupiditate? Doloribus enim pariatur perferendis facere cumque sunt minima, eius deleniti iure quas recusandae quam, eaque vel voluptatum delectus nesciunt, amet sapiente. Fugiat labore accusamus iste, ad sapiente, dolorum assumenda voluptatem, dicta vero esse at animi. Nam veritatis excepturi sapiente expedita ex explicabo similique rerum consequatur rem illum, est unde architecto. Totam voluptatem a repudiandae fugiat blanditiis in error nisi quisquam, voluptatum impedit. Expedita vero delectus nulla voluptates tempora rerum quas, quis cupiditate?</p>
         </section>
 
         <!-- Spacing --> 
-        <section>
+        <section class="p-2 shadow-dark m-2 border-rounded">
             <h2>Spacing and Sizing</h2>
 
             <div class="bg-muted p-0 m-1">
@@ -75,7 +78,7 @@
         </section>
 
         <!-- Layout -->
-         <section>
+         <section class="p-2 shadow-dark m-2 border-rounded">
             <h2>Layout Utilities</h2>
 
             <p>Flex:</p>
@@ -99,13 +102,38 @@
         </section>
          
         <!-- Buttons-->
-         <section>
+         <section class="p-2 shadow-dark m-2 border-rounded">
             <h2>Buttons and Links</h2>
 
             <button class="btn btn-primary">Primary Button</button>
             <button class="btn btn-secondary">Secondary Button</button>
             <a href="#" class="link">Inline Link</a>
          </section>
+
+         <!-- Components -->
+          <section class="p-2 shadow-dark m-2 border-rounded">
+            <h2>Components</h2>
+
+            <!-- Product -->
+             <figure class="product-image">
+                <img src="assets/coffeee.jpg" alt="" class="shadow-dark">
+                <figcaption class="image-tag shadow-light">50% off - &euro;2.50</figcaption>
+             </figure>
+
+             <!-- Tags: List -->
+              <ul class="tags m-1">
+                <li class="tag-item">Tag 1</li>
+                <li class="tag-item">Tag 2</li>
+                <li class="tag-item">Tag 3</li>
+              </ul>
+
+             <!-- Tags: Links -->
+              <div class="tags m-1">
+                <a href="#" class="tag-item">Tag 1</a>
+                <a href="#" class="tag-item">Tag 2</a>
+                <a href="#" class="tag-item">Tag 3</a>
+              </div>
+          </section>
     </main>
 </body>
 </html>
