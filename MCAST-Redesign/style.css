@@ -42,7 +42,7 @@ body {
     padding: 1.7rem 1.7rem;
     color: #ffffff;
     background-color: #000043;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .nav-item {
@@ -121,7 +121,6 @@ body {
 
 .caption-flex {
     display: flex;
-    align-items: center;
     color: #ffffff;
 }
 
