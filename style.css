@@ -21,7 +21,19 @@ body {
     font-family: 'Lexend', Arial, Helvetica, sans-serif;
     background-color: #000043;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 30px;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+.btn-secondary {
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    background-color: #4054B2;
+    color: #ffffff;
+    font-size: 20px;
     padding: 0.5rem;
     align-items: center;
     border-radius: 2.5rem;
@@ -32,6 +44,15 @@ body {
 .btn-design:hover {
     color: #ffffff;
     background-color: #4054B2;
+}
+
+.btn-secondary:hover {
+    color: #ffffff;
+    background-color: #000043;
+}
+
+.btn-secondary-layout {
+    display: flex;
 }
 
 /**************************** NAVIGATION ******************************/
@@ -59,10 +80,11 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    margin-left: -3rem;
 }
 
 .nav-links li {
-    margin-left: 1.5rem;
+    margin: 0 0.75em;
 }
 
 .nav-links a {
@@ -96,11 +118,6 @@ body {
     border-radius: 1.2rem;
 }
 
-.img-size {
-    width: 20%;
-    aspect-ratio: 21 / 9;
-    object-fit: cover;
-}
 /**************************** COMPONENTS ******************************/
 
 .product-image {
@@ -108,9 +125,18 @@ body {
 }
 
 .product-image img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 200%;
     object-fit: cover;
+}
+
+.img-size {
+    width: auto;
+    object-fit: cover;
+}
+
+.img-size img {
+    width: auto;
+    height: 77px;
 }
 
 .crop-img-top {
@@ -138,27 +164,27 @@ body {
    width: 100%;
    height: auto;
    position: relative;
-   top: -200px;
+
 }
 
 .container img {
     width: 100%;
-
+    margin-top: -400px;
 }
 
 .container .text {
     position: absolute;
     color: #ffffff;
-    left: 20px;
-    bottom: 20px;
-    font-size: 28px;
+    left: 100px;
+    bottom: 80px;
+    font-size: 48px;
     padding: 20px;
     margin-bottom: 12px;
 }
 
 .caption-design {
-    font-family: Lexend, Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-size: 48px;
     font-weight: bold;
 }
 
@@ -166,6 +192,38 @@ body {
     display: flex;
     color: #ffffff;
 }
+
+.overlap {
+    margin-top: -7rem;
+}
+
+/**************************** CONTAINERS ******************************/
+
+.box-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 500px;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.box-container-display {
+    background-color: #000043;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+.box-container-display:hover {
+    background-color: #4054B2;
+}
+
 
 /**************************** MOBILE LAYOUT ******************************/
 
