@@ -3,83 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+
+    <title>Home Page</title>
 </head>
 <body>
-    <!--This is a comment-->
-    <!--A banner/intro for the website-->
-    <header>
-        <h1>
-            The Student Gazette
-        </h1>
-    <nav>
-        <!--Global navigation element-->
-        <!--href (hypertext reference) is the URL to go to-->
-        <a href="news">News</a>|
-        <a href="reviews">Reviews</a>|
-        <a href="fun">Fun</a>
-    </nav>
- </header>
-        <!-- The unique content of this page-->
-         <main>
+    
+    <main>
 
-            <!-- Defines a thematic group in a website-->
-        <section id="news">
-                <h2>Latest News </h2>
-             
+        <nav class="navbar">
+            <div class="logo">
+                <figure class="product-image img-size">
+                    <img src="MCAST Logo.png" alt="">
+                </figure>
+            </div>
+            
 
-             <!-- We can organise content using articles-->
-              <article>
-                <h3> Fresher's Day at MCAST ICA</h3>
-                <p>
-                    The annual lecturer's headache is on 
-                    October 9 <sup>th</sup>
-                </p>
-              </article>
-            </section>
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="nav-item">Study</a>
+                </li>
 
-        <section id="reviews"> 
-                <h2>Reviews</h2>
-            <article>
-                    School Canteen Review
-                
-                    <!--Unordered list(not a numbered list)-->
+                <li>
+                    <a href="#" class="nav-item">Services</a>
+                </li>
 
-                <ul> 
-                    <!--List item-->
-                    <li>Average Service</li>
-                    <li>Good sausague rolls</li>
-                    <li>Overpriced</li>
-                    <li>Not a wide rage of food selection</li>
-                </ul>
-            </article>
-        </section>
+                <li>
+                    <a href="#" class="nav-item">About</a>
+                </li>
 
-        <section id="fun">
-            <h2>Fun</h2>
-            <article>
-                3 Not So Fun Facts About Myself!
+                <li>
+                    <a href="#" class="nav-item">News</a>
+                </li>
+             </ul>
 
-           <!-- Ordered Lists are numbered lists-->
-            <ol>
-                <li> Sleeping all day</li>
-                <li> Eating all day</li>
-                <li> Doomscrolling all day</li>
-            </ol>
-            </article>
-        
+             <form class="search-bar">
+                <input type="text">
+                <button type="submit"></button>
+             </form>
+        </nav>
 
-         </main>
-        
-<!-- Holds page-level at the end of the body-->
-   <footer>
-    <p>
-        &copy;2025 The Student Gazette
-    </p>
-   </footer>
+        <div class="container">
+            
+            <figure class="product-image">
+                <img src="MCAST PROSPECTUS.jpg" class="crop-img-top" alt="">
+            </figure>
+
+                <div class="text">MCAST Prospectus 2025/26
+                <button class="btn-design caption-flex">Read Now!</button>
+                </div>
+        </div>
+    </main>
+
 </body>
 </html>
