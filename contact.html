@@ -10,42 +10,76 @@
 </head>
 <body>
     <nav class="navbar">
-            <div class="logo">
-                <figure class="product-image img-size">
-                    <img src="MCAST Logo.png" alt="">
-                </figure>
-            </div>
-            
-
-            <ul class="nav-links">
-                <li>
-                    <a href="#" class="nav-item">Study</a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-item">Services</a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-item">About</a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-item">News</a>
-                </li>
-             </ul>
-
-             <form class="search-bar">
-                <input type="text">
-                <button type="submit"></button>
-             </form>
-        </nav>
-
-         <div class="container">
-            
-            <figure class="product-image">
-                <img src="MCAST Backdrop.jpg" class="crop-img-bottom" alt="">
+        <div class="logo">
+            <figure class="product-image img-size">
+                <img src="MCAST Logo.png" alt="">
             </figure>
         </div>
+        
+
+        <ul class="nav-links">
+            <li>
+                <a href="courses.html" class="nav-item">Study</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-item">Services</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="nav-item">About</a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-item">News</a>
+            </li>
+         </ul>
+
+         <form class="search-bar">
+            <input type="text">
+            <button type="submit"></button>
+         </form>
+    </nav>
+
+    <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+
+        <div>
+            <label for="input-subject">Topic:</label>
+            <select name="subject" id="input-subject" required>
+                <option value="" disabled selected>Choose a subject</option>
+                <option value="love-coffee">I love coffee</option>
+                <option value="hate-coffee">I hate coffee</option>
+            </select>
+
+            <p class="error">Please choose a topic!</p>
+        </div>
+
+        <div>
+            <label for="input-Name">Name:</label>
+            <input type="text" name="Name" id="input-Name" placeholder="Emily Jones" required>
+
+            <p class="error">Please write your name here!</p>
+        </div>
+
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" id="input-email" placeholder="example@gmail.com" required>
+
+            <p class="error">Please add your contact info!</p>
+        </div>
+
+        <div>
+            <label for="input-message">Your Message:</label>
+            <textarea name="message" id="input-message" cols="30" rows="10" placeholder="Your message..." required minlength="20"></textarea>
+
+            <p class="error">Please write at least 20 characters!</p>
+        </div>
+
+        <div>
+            <button type="submit" class="btn-design-contact">Submit</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+        </div>
+
+    </form>
 </body>
 </html>
