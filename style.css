@@ -371,7 +371,7 @@ body {
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 155px;
+    left: 165px;
     top: 220px;
     border-radius: 100%;
     justify-content: center;
@@ -389,6 +389,32 @@ body {
 }
 
 .circle-one:hover {
+    background-color: #4054B2;
+    color: #ffffff;
+}
+
+.circle-two {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 770px;
+    top: 220px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: #000043;
+}
+
+.circle-two-text {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.circle-two:hover {
     background-color: #4054B2;
     color: #ffffff;
 }
