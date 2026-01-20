@@ -78,6 +78,13 @@ body {
     top: -50px;
     margin-top: -10px;
 }
+.btn-secondary-layout-2 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 200px;
+    margin-top: 10px;
+}
 
 /**************************** NAVIGATION ******************************/
 
