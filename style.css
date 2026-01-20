@@ -474,3 +474,39 @@ body {
     text-align: center;
     color: #ffffff;
 }
+
+/**************************** INSTITUTES ******************************/
+
+.background-box {
+    position: absolute;
+    width: 479px;
+    height: 700px;
+    left: -3px;
+    top: 0;
+    z-index: 1;
+
+    background-color: #4054B2;
+}
+
+
+.institute-1 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 184px;
+    z-index: 5;
+
+    background-color: #000043;
+}
+
+.institute-2 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 298px;
+    z-index: 5;
+
+    background-color: #000043;
+}
