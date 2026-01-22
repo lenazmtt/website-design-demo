@@ -480,7 +480,7 @@ body {
 .background-box {
     position: absolute;
     width: 479px;
-    height: 700px;
+    height: 800px;
     left: -3px;
     top: 0;
     z-index: 1;
@@ -494,8 +494,10 @@ body {
     width: 1140px;
     height: 66px;
     left: 60px;
-    top: 184px;
+    top: 170px;
     z-index: 5;
+    justify-content: center;
+    align-items: center;
 
     background-color: #000043;
 }
@@ -505,8 +507,71 @@ body {
     width: 1140px;
     height: 66px;
     left: 60px;
-    top: 298px;
+    top: 265px;
     z-index: 5;
+    justify-content: center;
+    align-items: center;
 
     background-color: #000043;
+}
+
+.institute-3 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 375px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000043;
+}
+
+.institute-4 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 492px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000043;
+}
+
+.institute-5 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 606px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000043;
+}
+
+.institute-6 {
+    position: absolute;
+    width: 1140px;
+    height: 66px;
+    left: 60px;
+    top: 720px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000043;
+}
+
+.text-institute-style {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+
 }
